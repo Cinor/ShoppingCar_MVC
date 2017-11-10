@@ -1,0 +1,20 @@
+﻿@model ShppingCar_MVC.ViewModels.ShppingCar
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Super Supermarket</h1>
+    <P>@Html.ActionLink("Go Shpping!", "ShppingCar", "ShppingCar", "", new { @class = "btn btn-primary btn-lg" })</P>
+    @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+</div>
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
